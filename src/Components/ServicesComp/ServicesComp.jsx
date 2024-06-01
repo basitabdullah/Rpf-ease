@@ -8,7 +8,7 @@ const Services = () => {
         <div className="offering-item">
           <img
             src="https://www.contragenix.com/wp-content/uploads/2024/02/Proposal-Development-Services-01.svg"
-            alt=""
+            alt="loading"
           />
 
           <div className="lower-sec">
@@ -20,12 +20,24 @@ const Services = () => {
         <div className="offering-item">
           <img
             src="https://www.contragenix.com/wp-content/uploads/2024/05/Web-Development-Images-1.svg"
-            alt=""
+            alt="loading"
           />
 
           <div className="lower-sec">
             <p className="title-offering">Proposal Training</p>
             <span>Read More</span>
+          </div>
+        </div>
+
+        <div className="offering-item">
+          <img
+            src="https://www.contragenix.com/wp-content/uploads/2024/02/Web-and-Software-Development-Service-01.svg"
+            alt="loading"
+          />
+
+          <div className="lower-sec">
+            <p className="title-offering">Web And Software Development</p>
+            <span>Coming Soon!</span>
           </div>
         </div>
       </div>

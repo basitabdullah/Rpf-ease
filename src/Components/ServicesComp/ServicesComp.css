@@ -8,8 +8,10 @@
 }
 
 
-.offering-title {
+.title-offering{
     font-size: 48px;
+    width: 250px;
+    text-overflow: ellipsis;
 }
 
 .offering-container {
@@ -20,6 +22,7 @@
 
 .offering-item {
     background-color: #f6f6f6;
+    min-height: 500px;
 }.lower-sec {
     padding: 20px;
     display: flex;
@@ -34,9 +37,9 @@
 }
 
 .lower-sec span:hover {
-    background-color: #6d294695;
+    background-color: #6d2946c4;
     color: #fffef5;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .title-offering {

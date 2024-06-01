@@ -13,7 +13,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link to="/aboutus" className="links">
-          About Us
+          About
         </Link>
         <Link to="/services" className="links">
           Services
@@ -22,7 +22,7 @@ const Navbar = () => {
           Our Clients
         </Link>
         <Link to="/contact"  className="links">
-          Contact Us
+          Contact
         </Link>
       </div>
 
