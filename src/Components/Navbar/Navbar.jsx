@@ -1,19 +1,28 @@
 import "./Navbar.css"
 import logo from "../../pictures/logo.png";
-import {Link} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
+import { useEffect, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
+  const [active,setActive] = useState(false)
+    const location = useLocation();
+
+    useEffect(() => {
+      setActive(false);
+    }, [location]);
+
   return (
     <div className="header">
       <div className="rfp">
-        <img className="logo" src={logo} />
+        <Link to="/">
+          <img className="logo" src={logo} />
+        </Link>
       </div>
 
       <div className="link-container">
         <Link to="/" className="links">
           Home
-        </Link>
-        <Link to="/aboutus" className="links">
-          About
         </Link>
         <Link to="/services" className="links">
           Services
@@ -21,12 +30,42 @@ const Navbar = () => {
         <Link to="/ourclients" className="links">
           Our Clients
         </Link>
-        <Link to="/contact"  className="links">
-          Contact
+        <Link to="/contact" className="links">
+          Contact Us
         </Link>
       </div>
 
-      <Link to="schedule" className="shedule-button">Schedule Meeting</Link>
+      <Link to="schedule" className="shedule-button">
+        Schedule Meeting
+      </Link>
+
+      <div className="hamburgerMenu">
+        <GiHamburgerMenu onClick={() => setActive((prev) => !prev)} />
+      </div>
+
+      {active && (
+        <div className="hamMenu">
+          <Link to="/" className="menulinks">
+            Home
+          </Link>
+          <Link to="/services" className="menulinks">
+            Services
+          </Link>
+          <Link to="/ourclients" className="menulinks">
+            Our Clients
+          </Link>
+          <Link to="/contact" className="menulinks">
+            Contact Us
+          </Link>
+
+          <Link to="schedule" className="shedule-button-menu">
+            Schedule Meeting
+          </Link>
+          <div className="close">
+            <IoMdClose onClick={() => setActive((prev) => !prev)} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

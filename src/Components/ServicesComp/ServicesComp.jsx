@@ -29,17 +29,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="offering-item">
-          <img
-            src="https://www.contragenix.com/wp-content/uploads/2024/02/Web-and-Software-Development-Service-01.svg"
-            alt="loading"
-          />
-
-          <div className="lower-sec">
-            <p className="title-offering">Web And Software Development</p>
-            <span>Coming Soon!</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
