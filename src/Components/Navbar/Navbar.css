@@ -25,7 +25,7 @@
     cursor: pointer;
 
     @media (max-width : 578px) {
-       width: 90px;
+        width: 90px;
     }
 }
 
@@ -93,6 +93,8 @@
     @media (max-width: 1084px) {
         display: flex;
     }
+
+
 }
 
 .hamMenu {
@@ -103,26 +105,32 @@
     font-size: 20px;
     font-weight: 600;
     background-color: #6d2946;
+    box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1), 0 1px 2px -1px rgba(255, 255, 255, 0.9);
     position: absolute;
     right: 0;
     top: 0;
     padding: 20px;
     width: 250px;
-    height: 300px;
+    height: 350px;
     border-radius: 0 0 0 30px;
 
     @media (max-width : 578px) {
         width: 100%;
         align-items: center;
-        padding: 0;
+        padding: 0px;
         border-radius: 0;
         padding-top: 10px;
         font-size: 18px;
     }
 
+    @media (min-width: 1084px) {
+        display: none;
+    }
+
     .menulinks {
         text-decoration: none;
         color: white;
+        margin-top: 10px;
     }
 
     .shedule-button-menu {

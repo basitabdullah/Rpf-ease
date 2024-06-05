@@ -13,8 +13,8 @@ import logistic from "../../pictures/logistic.svg";
 import management from "../../pictures/management.svg";
 import accounting from "../../pictures/accounting.svg";
 import support from "../../pictures/support.svg";
+import staffing from "../../pictures/staffing.svg";
 import { Link } from "react-router-dom";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
   const things1 = [
     {
@@ -41,9 +41,9 @@ const Home = () => {
       img: it,
     },
     {
-      title: "Janitorial Services",
+      title: "Staffing",
       key: 5,
-      img: janitorial,
+      img: staffing,
     },
     {
       title: "Logistic & Supply Chain",
@@ -83,7 +83,7 @@ const Home = () => {
             <span className="span3"> PROPOSALS. </span>
           </div>
           <Link to="/services" className="our-services">
-            <MdOutlineKeyboardArrowRight />
+            Our Services
           </Link>
         </div>
 

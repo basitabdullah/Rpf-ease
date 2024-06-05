@@ -1,0 +1,20 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    bottom: 40px;
+    left: 1800px;
+    // background-color: rgb(103, 222, 76);
+    background-color:#6d2946;
+    position: sticky;
+    z-index: 100;
+    border-radius: 50%;
+    margin: 10px;
+
+    svg{
+        color: white;
+        font-size: 38px;
+    }
+}

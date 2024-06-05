@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs/Contact";
 import "./styles/global.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import Contact from "./Components/ContactBtn/Contact";
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/schedule" element={<Schedule />} />
       </Routes>
       <Footer />
+      <Contact />
     </BrowserRouter>
   );
 };

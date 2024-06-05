@@ -1,0 +1,314 @@
+.container {
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+
+}
+
+
+
+.upper-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6d2946;
+}
+
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px gray;
+
+}
+
+
+
+
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 3px 6px #390c14;
+
+}
+
+.name {
+    font-size: 16px;
+
+}
+
+input[type="text"]::placeholder {
+    color: #6d2946;
+}
+
+
+input[type="email"] {
+    border: none;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px gray;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 3px 6px #390c14;
+}
+
+.email {
+    font-size: 16px;
+
+}
+
+input[type="email"]::placeholder {
+    color: #6d2946
+}
+
+input[type="tel"] {
+    border: none;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px gray;
+}
+
+input[type="tel"]:focus {
+    outline: none;
+    box-shadow: 0 3px 6px #390c14;
+}
+
+.phone {
+    font-size: 16px;
+
+}
+
+input[type="tel"]::placeholder {
+    color: #6d2946;
+}
+
+.section4 {
+    position: relative;
+
+}
+
+.msg {
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px gray;
+
+}
+
+.msg:focus {
+    outline: none;
+    box-shadow: 0 3px 6px #390c14;
+}
+
+.placeholder-text {
+    font-size: 16px;
+    color: #6d2946;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+
+}
+
+.done {
+    border: none;
+    background-color: #6d2946;
+    padding: 10px 22px;
+    color: white;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 1px 2px #6d2946;
+    transition: 0.35s ease-in;
+
+
+}
+
+
+.done:hover {
+    border: none;
+    background-color: white;
+    color: #6d2946;
+
+}
+
+
+/* contact details */
+
+.contact-details {
+    background-color: #6d2946;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: -7px 7px 10px gray;
+    gap: 40px;
+    margin-bottom: 40px;
+    min-height: 50vh;
+
+    @media (max-width:480px) {
+        /* align-items: center; */
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    >h1 {
+        font-size: 28px;
+        color: #FFF;
+    }
+
+    .itemContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            gap: 20px;
+            color: white;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+
+        .icon {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.deliver {
+    background-color: rgb(121, 161, 121);
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 8px;
+    backdrop-filter: 2px;
+    margin-top: 30px;
+    display: none;
+
+
+}
+
+.not-deliver {
+    background-color: rgb(153, 100, 100);
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 8px;
+    backdrop-filter: 2px;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+
+}
+
+
+@media screen and (max-width:1018px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:1018px) {
+    .banner-right {
+        width: 250px;
+
+
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    input[type="text"] {
+        width: 95%;
+    }
+
+    input[type="email"] {
+        width: 95%;
+    }
+
+    input[type="tel"] {
+        width: 95%;
+    }
+
+    textarea {
+        width: 95%;
+
+    }
+
+    .banner-right {
+        width: 140px;
+
+    }
+
+
+    .banner-text2 {
+        font-size: 18px;
+
+    }
+
+    .sections {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    form {
+        width: 100%;
+    }
+
+
+
+
+
+}
