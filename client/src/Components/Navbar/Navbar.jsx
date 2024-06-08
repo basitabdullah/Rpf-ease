@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <Link to="schedule" className="shedule-button">
+      <Link to="/contact" className="shedule-button">
         Schedule Meeting
       </Link>
 

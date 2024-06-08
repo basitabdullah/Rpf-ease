@@ -9,9 +9,11 @@ import "./styles/global.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/ContactBtn/Contact";
+import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <BrowserRouter>
+    <Toaster/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

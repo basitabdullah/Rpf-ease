@@ -1,73 +1,107 @@
-import  "./Contact.css";
+import "./Contact.css";
 import phone from "../../pictures/phone-logo.svg";
 import email from "../../pictures/email.svg";
 import address from "../../pictures/address-3.svg";
 import insta from "../../pictures/instagram-3.svg";
 import facebook from "../../pictures/facebook-2.svg";
 import linkedin from "../../pictures/linkedin.svg";
-
-
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    setLoading(true)
+    e.preventDefault();
+    fetch("http://localhost:3001/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setLoading(false)
+        toast.success("Message Sent!");
+      })
+      .catch((error) => {
+        toast.error("Something Went Wrong!");
+      });
+  };
+
   return (
     <div className="container">
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="sections">
           <div className="upper-text">Get in Contact</div>
 
           <div className="section1">
-            <label for="name"></label>
-
             <input
               type="text"
-              placeholder=" First name *"
+              placeholder="First name *"
               className="name"
               required
-              id="name"
+              value={formData.name}
               name="name"
+              onChange={handleChange}
             />
           </div>
 
           <div className="section2">
-            <label for="email"></label>
             <input
               type="email"
               placeholder="E-mail *"
               className="email"
-              required
-              id="email"
+              value={formData.email}
               name="email"
+              required
+              onChange={handleChange}
             />
           </div>
 
           <div className="section3">
-            <label for="tel"></label>
             <input
               type="tel"
               placeholder="Phone"
               className="phone"
-              id="tel"
-              name="tel"
+              value={formData.phone}
+              name="phone"
+              onChange={handleChange}
             />
           </div>
 
           <div className="section4">
-            <label for="message"></label>
             <textarea
-              name="message"
-              id="message"
               className="msg"
+              value={formData.message}
+              name="message"
+              required
+              placeholder="Drop a Message*"
+              onChange={handleChange}
+              style={{ width: "95%" }}
               rows="7"
-              cols="31.5"
             ></textarea>
-            <div className="placeholder-text" id="placeholder">
-              Drop a message *
-            </div>
           </div>
 
           <div className="section5">
-            <button className="done" type="submit" value="submit">
-              REACH OUT
+            <button
+              className={loading ? "done load" : "done"}
+              type="submit"
+            >
+              {loading ? "SENDING..." : "REACH OUT"}
             </button>
           </div>
 
@@ -78,22 +112,20 @@ const Contact = () => {
       </form>
 
       <div className="contact-details">
-        <h1>Contact Deatils</h1>
+        <h1>Contact Details</h1>
 
         <div className="itemContainer">
           <div className="item">
-            <img src={phone} alt="" />
+            <img src={phone} alt="loading" />
             <p>+91 00000000 , +1 020202020202</p>
           </div>
           <div className="item">
-            <img src={email} alt="" />
+            <img src={email} alt="loading" />
             <p>hr@rfpease.org</p>
           </div>
           <div className="item">
-            <img src={address} alt="" />
-            <p>
-              Islamabad , 190034 , house no 20 , street o-block texas , USA.
-            </p>
+            <img src={address} alt="loading" />
+            <p>190034, house no 20, street o-block texas, USA.</p>
           </div>
         </div>
 
