@@ -7,8 +7,13 @@ const app = express();
 const port = 3001;
 
 app.use(bodyParser.json());
-app.use(cors());
-
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+    methods: ["GET", "PUT", "DELETE", "POST"],
+  })
+);
 app.post("/send-email", (req, res) => {
   const { name, email, phone, message } = req.body;
 

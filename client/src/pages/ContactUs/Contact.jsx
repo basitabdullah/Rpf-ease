@@ -15,7 +15,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,9 +23,9 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    setLoading(true)
+    setLoading(true);
     e.preventDefault();
-    fetch("http://localhost:3001/send-email", {
+    fetch("https://rpf-ease.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const Contact = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setLoading(false)
+        setLoading(false);
         toast.success("Message Sent!");
       })
       .catch((error) => {
@@ -89,7 +89,7 @@ const Contact = () => {
               value={formData.message}
               name="message"
               required
-              placeholder="Drop a Message*"
+              placeholder="Drop a Message *"
               onChange={handleChange}
               style={{ width: "95%" }}
               rows="7"
@@ -97,10 +97,7 @@ const Contact = () => {
           </div>
 
           <div className="section5">
-            <button
-              className={loading ? "done load" : "done"}
-              type="submit"
-            >
+            <button className={loading ? "done load" : "done"} type="submit">
               {loading ? "SENDING..." : "REACH OUT"}
             </button>
           </div>
@@ -121,7 +118,7 @@ const Contact = () => {
           </div>
           <div className="item">
             <img src={email} alt="loading" />
-            <p>hr@rfpease.org</p>
+            <a href="mailto:hr@rfpease.org">hr@rfpease.org</a>
           </div>
           <div className="item">
             <img src={address} alt="loading" />
@@ -141,7 +138,10 @@ const Contact = () => {
             </a>
           </div>
           <div className="icon">
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/rfp-ease-601200311/"
+              target="_"
+            >
               <img src={linkedin} alt="load" />
             </a>
           </div>

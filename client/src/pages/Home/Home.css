@@ -92,7 +92,6 @@
 
 .about-section p {
     margin-bottom: 40px;
-    text-align: justify;
     @media (max-width : 578px) {
         font-size: 18px;
     }

@@ -8,12 +8,12 @@ import edu from "../../pictures/edu.svg";
 import construction from "../../pictures/building.svg";
 import healthcare from "../../pictures/healthcare.svg";
 import it from "../../pictures/It.svg";
-import janitorial from "../../pictures/janitorial.svg";
 import logistic from "../../pictures/logistic.svg";
 import management from "../../pictures/management.svg";
 import accounting from "../../pictures/accounting.svg";
 import support from "../../pictures/support.svg";
 import staffing from "../../pictures/staffing.svg";
+import banner from "../../pictures/banner.png";
 import { Link } from "react-router-dom";
 const Home = () => {
   const things1 = [
@@ -46,7 +46,7 @@ const Home = () => {
       img: staffing,
     },
     {
-      title: "Logistic & Supply Chain",
+      title: "Event Management",
       key: 6,
       img: logistic,
     },
@@ -59,7 +59,7 @@ const Home = () => {
       img: management,
     },
     {
-      title: "Accounting & Finance",
+      title: "Payrolling",
       key: 8,
       img: accounting,
     },
@@ -88,10 +88,7 @@ const Home = () => {
         </div>
 
         <div className="right">
-          <img
-            src="https://www.contragenix.com/wp-content/uploads/2024/02/why-choose-us-3.svg"
-            className="pic1"
-          />
+          <img src={banner} className="pic1" />
         </div>
       </div>
 
@@ -110,7 +107,7 @@ const Home = () => {
           business objectives and increase your chances of securing valuable
           contracts.
         </p>
-        <h1 className="h1">Why Choose RFP Ease?</h1>
+        <h1 className="h1">Why Choose RFPEase?</h1>
         <h3> Expert Team:</h3>
         <p>
           Our team includes certified proposal managers, industry veterans, and

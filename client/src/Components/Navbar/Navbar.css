@@ -56,8 +56,7 @@
 }
 
 .links:hover {
-    border-bottom: 3px solid gray;
-    color: gray;
+    border-bottom: 3px solid rgba(108, 41, 70, 255);
 }
 
 .shedule-button {
