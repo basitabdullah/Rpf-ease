@@ -15,7 +15,10 @@ import support from "../../pictures/support.svg";
 import staffing from "../../pictures/staffing.svg";
 import banner from "../../pictures/banner.png";
 import { Link } from "react-router-dom";
+
 const Home = () => {
+
+
   const things1 = [
     {
       title: "Education",

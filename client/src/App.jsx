@@ -9,22 +9,43 @@ import "./styles/global.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/ContactBtn/Contact";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import { Toaster } from "react-hot-toast";
+import { useEffect, useState } from "react";
+import Loader from "./Components/Loader/Loader";
 const App = () => {
+  //Used delay to see the Loader look temporarily
+  //Not meant for production
+
+  const [delay, setDelay] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setDelay(false);
+    }, 4000);
+  }, []);
+
   return (
-    <BrowserRouter>
-    <Toaster/>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/ourclients" element={<Clients />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/schedule" element={<Schedule />} />
-      </Routes>
-      <Footer />
-      <Contact />
-    </BrowserRouter>
+    <>
+      {delay ? (
+        <Loader />
+      ) : (
+        <BrowserRouter>
+          <ScrollToTop>
+            <Toaster />
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/ourclients" element={<Clients />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="/schedule" element={<Schedule />} />
+            </Routes>
+            <Footer />
+            <Contact />
+          </ScrollToTop>
+        </BrowserRouter>
+      )}
+    </>
   );
 };
 

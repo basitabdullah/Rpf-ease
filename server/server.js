@@ -27,7 +27,7 @@ app.post("/send-email", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "basitabdullah1122@gmail.com", 
+    to: "hr@rfpease.org",
     subject: "Contact Us Message",
     text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
   };
@@ -39,6 +39,11 @@ app.post("/send-email", (req, res) => {
     res.status(200).json({ message: "Email sent: " + info.response });
   });
 });
+
+
+app.get("/" ,(req,res)=>{
+  res.send("RFP EASE BACKEND API (WORKING)");
+})
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);

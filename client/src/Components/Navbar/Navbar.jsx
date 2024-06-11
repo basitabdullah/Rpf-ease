@@ -58,7 +58,7 @@ const Navbar = () => {
             Contact Us
           </Link>
 
-          <Link to="schedule" className="shedule-button-menu">
+          <Link to="/contact" className="shedule-button-menu">
             Schedule Meeting
           </Link>
           <div className="close">
