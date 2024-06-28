@@ -13,11 +13,13 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import Loader from "./Components/Loader/Loader";
+import ProposalPage from "./pages/ProposalPage/ProposalPage";
+import ProposalTraining from "./pages/ProposalTraining/ProposalTraining";
 const App = () => {
   //Used delay to see the Loader look temporarily
   //Not meant for production
 
-  const [delay, setDelay] = useState(true);
+  const [delay, setDelay] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setDelay(false);
@@ -39,6 +41,8 @@ const App = () => {
               <Route path="/ourclients" element={<Clients />} />
               <Route path="/contact" element={<ContactUs />} />
               <Route path="/schedule" element={<Schedule />} />
+              <Route path="/proposal-dev" element={<ProposalPage />} />
+              <Route path="/proposal-training" element={<ProposalTraining />} />
             </Routes>
             <Footer />
             <Contact />

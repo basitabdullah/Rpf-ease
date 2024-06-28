@@ -49,7 +49,7 @@ const Footer = () => {
 
       <div className="copyright">
         <p>
-          Copyright <FaCopyright /> 2024 RFP Ease | All Rights Reserved.
+          Copyright <FaCopyright /> 2024 RFPEase | All Rights Reserved.
         </p>
       </div>
     </footer>

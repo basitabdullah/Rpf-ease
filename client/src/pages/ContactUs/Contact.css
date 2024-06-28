@@ -1,5 +1,5 @@
     .container {
-        padding: 100px;
+        padding: 50px 100px;
         display: flex;
         flex-direction: row;
         gap: 140px;
@@ -13,10 +13,15 @@
 
 
     .upper-text {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 700;
         color: #6d2946;
-        padding: 10px;
+        margin-top: 10px;
+
+        @media (max-width:560px) {
+            font-size: 24px;
+
+        }
     }
 
 
@@ -72,13 +77,13 @@
         color: #6d2946
     }
 
-    input[type="tel"] {
+    input[type="number"] {
         border: none;
         padding: 10px 20px;
         border-radius: 10px;
     }
 
-    input[type="tel"]:focus {
+    input[type="number"]:focus {
         outline: none;
     }
 
@@ -87,7 +92,7 @@
 
     }
 
-    input[type="tel"]::placeholder {
+    input[type="number"]::placeholder {
         color: #6d2946;
     }
 
@@ -102,6 +107,7 @@
         resize: none;
         outline: none;
         box-shadow: 0 3px 6px gray;
+        font-size: 18px;
 
 
     }
@@ -312,7 +318,7 @@
 
         }
 
-        input[type="tel"] {
+        input[type="number"] {
             width: 95%;
             border-radius: 5px;
             padding: 10px 5px;

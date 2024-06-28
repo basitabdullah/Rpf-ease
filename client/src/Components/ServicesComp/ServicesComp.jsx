@@ -1,31 +1,30 @@
-import "./ServicesComp.css"
-import Training from "../../pictures/training.png"
+import "./ServicesComp.css";
+import Training from "../../pictures/training.png";
 import Development from "../../pictures/development.png";
+import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className="our-offering">
       <h1 className="offering-title">Our Offerings</h1>
       <div className="offering-container">
-        <div className="offering-item">
+        <Link to="/proposal-dev" className="offering-item">
           <img src={Development} alt="loading" />
-
           <div className="lower-sec">
             <p className="title-offering">Proposal Development</p>
-            <span>Read More</span>
+            <span className="readmore">Read More</span>
           </div>
-        </div>
+        </Link>
 
-        <div className="offering-item">
+        <Link to="/proposal-training" className="offering-item">
           <img src={Training} alt="loading" />
-
           <div className="lower-sec">
             <p className="title-offering">Proposal Training</p>
-            <span>Read More</span>
+            <span className="readmore">Read More</span>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
-}
+};
 
-export default Services
+export default Services;

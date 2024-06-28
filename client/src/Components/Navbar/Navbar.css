@@ -1,5 +1,5 @@
 .header {
-    background-color: #fffef5;
+    background-color: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,8 @@
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #f4f4f4;
+    transition: 0.5s all ease-in ;
 
 }
 
@@ -76,7 +77,7 @@
 
 .shedule-button:hover {
     color: #6d2946;
-    background-color: #fffef5;
+    background-color: #f4f4f4;
     scale: 1.1;
 }
 

@@ -5,6 +5,7 @@
     align-items: center;
     color: rgba(57, 12, 20, 255);
     gap: 20px;
+    
 
     @media (max-width : 578px) {
         padding: 30px;
@@ -15,6 +16,7 @@
 
 .offering-title {
     font-size: 48px;
+    margin-bottom: 10px;
 
     @media (max-width : 578px) {
         font-size: 24px;
@@ -36,6 +38,7 @@
 .offering-item {
     background-color: #f6f6f6;
     min-height: 500px;
+    border-radius: 10px;
 }
 
 .lower-sec {
@@ -45,13 +48,14 @@
     gap: 10px;
 }
 
-.lower-sec span {
+.lower-sec .readmore {
     cursor: pointer;
     padding: 5px;
     width: max-content;
+    color: #6d2946c4;
 }
 
-.lower-sec span:hover {
+.lower-sec .readmore:hover {
     background-color: #6d2946c4;
     color: #fffef5;
     border-radius: 8px;
@@ -70,7 +74,7 @@
     object-fit: cover;
     cursor: pointer;
     transition: 0.35s all ease-in-out;
-
+    border-radius: 10px 10px 0 0;
     @media (max-width : 478px) {
         width: 290px;
     }

@@ -25,7 +25,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
-    fetch("http://localhost:3001/send-email", {
+    fetch("https://rpf-ease.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const Contact = () => {
 
           <div className="section3">
             <input
-              type="tel"
+              type="number"
               placeholder="Phone"
               className="phone"
               value={formData.phone}

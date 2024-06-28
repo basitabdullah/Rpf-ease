@@ -40,10 +40,9 @@ app.post("/send-email", (req, res) => {
   });
 });
 
-
-app.get("/" ,(req,res)=>{
+app.get("/", (req, res) => {
   res.send("RFP EASE BACKEND API (WORKING)");
-})
+});
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);

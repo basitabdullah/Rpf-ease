@@ -98,49 +98,55 @@ const Home = () => {
       <div className="about-section">
         <h1 className="h1">About Us</h1>
         <p>
-          Welcome to RFPEase, your trusted partner in crafting compelling and
-          winning RFP responses. With a proven track record of success, we
-          specialize in transforming complex requirements into clear, persuasive
-          proposals that set our clients apart. At RFPEase, we understand the
-          intricacies of the RFP process and the critical importance of a
-          well-crafted response. Our team comprises industry experts with
-          decades of combined experience in proposal development, strategic
-          planning, and competitive analysis. We are dedicated to delivering
-          high-quality, customized RFP responses that align with your unique
-          business objectives and increase your chances of securing valuable
-          contracts.
+          Welcome to <span>RFPEase</span>, your trusted partner in crafting
+          compelling and winning RFP responses. With a proven track record of
+          success, we specialize in transforming complex requirements into
+          clear, persuasive proposals that set our clients apart. At RFPEase, we
+          understand the intricacies of the RFP process and the critical
+          importance of a well-crafted response. Our team comprises industry
+          experts with decades of combined experience in{" "}
+          <span>
+            proposal development, strategic planning, and competitive analysis.
+          </span>{" "}
+          We are dedicated to delivering high-quality, customized RFP responses
+          that align with your unique business objectives and increase your
+          chances of <span>securing valuable contracts</span>.
         </p>
         <h1 className="h1">Why Choose RFPEase?</h1>
         <h3> Expert Team:</h3>
         <p>
           Our team includes certified proposal managers, industry veterans, and
-          skilled writers who understand the nuances of various sectors,
-          including government, healthcare, technology, and more.
+          skilled writers who understand the nuances of{" "}
+          <span>
+            various sectors, including government, healthcare, technology
+          </span>
+          , and more.
         </p>
         <h3> Comprehensive Approach:</h3>
         <p>
-          We offer end-to-end RFP response services, from initial analysis and
-          strategy formulation to final review and submission. Our meticulous
-          process ensures no detail is overlooked.
+          We offer end-to-end RFP response services, from initial{" "}
+          <span> analysis and strategy formulation</span> to final review and
+          submission. Our meticulous process ensures no detail is overlooked.
         </p>
 
         <h3>Client-Centric Focus:</h3>
         <p>
-          We pride ourselves on our collaborative approach, working closely with
-          clients to understand their goals and tailor our services to meet
-          their specific needs. Your success is our success.
+          We pride ourselves on our <span> collaborative approach</span>,
+          working closely with clients to understand their goals and tailor our
+          services to meet their specific needs. Your success is our success.
         </p>
         <h3> Timely Delivery: </h3>
         <p>
-          In the fast-paced world of RFPs, timing is everything. Our streamlined
-          processes and dedicated team ensure that your proposals are delivered
-          on time, every time. At RFPEase, we believe in the power of a
-          well-crafted proposal to open doors and drive growth. Whether you're a
-          small business looking to break into new markets or a large
-          corporation aiming to expand your portfolio, we have the expertise and
-          dedication to help you achieve your goals. Partner with us and
-          experience the RFPEase difference. Together, we can turn your RFP
-          responses into winning proposals that propel your business forward.
+          In the fast-paced world of RFPs, timing is everything. Our{" "}
+          <span>streamlined processes</span> and <span>dedicated team</span>{" "}
+          ensure that your proposals are delivered on time, every time. At , we
+          believe in the power of a <span>well-crafted proposal</span> to open
+          doors and drive growth. Whether you're a small business looking to
+          break into new markets or a large corporation aiming to expand your
+          portfolio, we have the <span>expertise and dedication</span> to help
+          you achieve your goals. Partner with us and experience the RFPEase
+          difference. Together, we can turn your RFP responses into{" "}
+          <span>winning proposals</span> that propel your business forward.
           Contact us today to learn how we can assist you in achieving your
           business objectives through strategic, winning RFP responses.
         </p>

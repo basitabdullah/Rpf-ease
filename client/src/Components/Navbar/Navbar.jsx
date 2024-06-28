@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import logo from "../../pictures/logo.png";
+import logo from "../../pictures/logo3.png";
 import {Link, useLocation} from "react-router-dom"
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
