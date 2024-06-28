@@ -19,7 +19,6 @@ import solution from "../../pictures/solution-icon.svg";
 import success from "../../pictures/success-icon.svg";
 import support from "../../pictures/support-icon.svg";
 
-
 const ProposalPage = () => {
   return (
     <div className="proposal">
@@ -47,7 +46,7 @@ const ProposalPage = () => {
         </div>
       </div>
       <div className="proposalSecTwo">
-        <h1>Our Proposal Development Process</h1>
+        <h1>Our Proposal Development Process :</h1>
         <div className="proposalSecTwoContainer">
           <h5>Proposal Strategy and Planning</h5>
           <div className="item">
@@ -198,7 +197,7 @@ const ProposalPage = () => {
             <p className="desc">
               From initial strategy to final submission, we provide
               comprehensive support throughout the entire proposal development
-              process..
+              process.
             </p>
           </div>
         </div>

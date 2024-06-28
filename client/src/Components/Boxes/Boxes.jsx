@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import "./Boxes.scss";
 import studying from "../../pictures/studying-icon.svg";
 import project from "../../pictures/project-icon.svg";
