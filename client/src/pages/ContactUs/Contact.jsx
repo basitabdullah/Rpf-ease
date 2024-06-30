@@ -114,7 +114,7 @@ const Contact = () => {
         <div className="itemContainer">
           <div className="item">
             <img src={phone} alt="loading" />
-            <p>+91 00000000 , +1 020202020202</p>
+            <p>+91 9622232093</p>
           </div>
           <div className="item">
             <img src={email} alt="loading" />
@@ -122,7 +122,7 @@ const Contact = () => {
           </div>
           <div className="item">
             <img src={address} alt="loading" />
-            <p>190034, house no 20, street o-block texas, USA.</p>
+            <p>Texas , USA.</p>
           </div>
         </div>
 
@@ -138,10 +138,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="icon">
-            <a
-              href="https://www.linkedin.com/in/rfp-ease-601200311/"
-              target="_"
-            >
+            <a href="https://www.linkedin.com/company/rfpease/" target="_">
               <img src={linkedin} alt="load" />
             </a>
           </div>

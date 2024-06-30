@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div className="details">
             <p>Call Us</p>
-            <p>+91 398404345</p>
+            <p>+91 9622232093</p>
           </div>
         </div>
 
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
           <div className="details">
             <p>Address</p>
-            <p>Ganderbal J&K</p>
-          </div>
+            <p>Texas , USA</p>
+          </div> 
         </div>
       </div>
 

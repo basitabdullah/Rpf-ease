@@ -5,7 +5,7 @@ import Boxes from "../../Components/Boxes/Boxes";
 import { FaRegClock } from "react-icons/fa";
 import { MdFormatIndentIncrease } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
-
+import {Link} from "react-router-dom"
 const ProposalTraining = () => {
   const data = [
     {
@@ -176,9 +176,10 @@ const ProposalTraining = () => {
               <span>skills, experience, and certification</span> you need to
               succeed in the competitive field of government contracting.
             </p>
-
           </div>
+          <Link to="/contact">
             <button className="enrollBtn">Enroll</button>
+          </Link>
         </div>
       </div>
       <Boxes />

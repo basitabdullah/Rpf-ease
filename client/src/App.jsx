@@ -19,11 +19,11 @@ const App = () => {
   //Used delay to see the Loader look temporarily
   //Not meant for production
 
-  const [delay, setDelay] = useState(false);
+  const [delay, setDelay] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setDelay(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   return (

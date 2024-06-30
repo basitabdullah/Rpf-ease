@@ -1,0 +1,97 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 100px;
+  @media (max-width: 776px) {
+    padding: 10px;
+    font-size: 30px;
+  }
+  @media (max-width: 446px) {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 48px;
+    color: #390c14;
+    font-weight: 700;
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+    @media (max-width: 776px) {
+      font-size: 30px;
+    }
+    @media (max-width: 446px) {
+      font-size: 24px;
+    }
+  }
+
+  .things {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    justify-content: space-evenly;
+    color: #732d4d;
+    font-size: 18px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .thing {
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    width: 260px;
+    height: 130px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: 0.4s ease;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    .fig {
+      font-size: 22px;
+      font-weight: 800;
+      color: #390c14;
+    }
+    @media (max-width: 376px) {
+      width: 200px;
+    }
+
+    .one .two .three {
+      .thingContainer {
+        display: flex;
+        gap: 30px;
+        align-self: flex-start;
+        .title {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .videoContainer {
+    width: 700px;
+    border-radius: 30px;
+
+    @media (max-width: 875px) {
+      width: 500px;
+    }
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+    video {
+      border-radius: 30px;
+      width: 100%;
+      height: 100%;
+      @media (max-width: 430px) {
+        border-radius: 10px;
+      }
+    }
+  }
+}
