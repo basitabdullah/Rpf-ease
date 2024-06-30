@@ -27,7 +27,7 @@ app.post("/send-email", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "hr@rfpease.org",
+    to: "ahmadreyan380@gmail.com",
     subject: "Contact Us Message",
     text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
   };

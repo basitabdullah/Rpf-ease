@@ -24,8 +24,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     setLoading(true);
-    e.preventDefault();
-    fetch("https://rpf-ease.onrender.com/send-email", {
+    //rpf-ease.onrender.com
+    https: e.preventDefault();
+    fetch("http://localhost:3001/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
