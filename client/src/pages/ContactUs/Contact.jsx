@@ -24,8 +24,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     setLoading(true);
-    //rpf-ease.onrender.com
-    https: e.preventDefault();
+     e.preventDefault()
     fetch("http://localhost:3001/send-email", {
       method: "POST",
       headers: {
@@ -37,6 +36,12 @@ const Contact = () => {
       .then((data) => {
         setLoading(false);
         toast.success("Message Sent!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
       })
       .catch((error) => {
         toast.error("Something Went Wrong!");
