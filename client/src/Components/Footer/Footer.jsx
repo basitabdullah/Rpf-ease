@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="details">
             <p>Address</p>
-            <p>Texas , USA</p>
+            <p>6705 W Highway 290 Suite 607 #1021, Austin, TX. 78735-8407 United States</p>
           </div> 
         </div>
       </div>

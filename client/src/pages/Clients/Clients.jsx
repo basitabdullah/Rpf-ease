@@ -9,6 +9,7 @@ import accounting from "../../pictures/accounting.svg";
 import support from "../../pictures/support.svg";
 import staffing from "../../pictures/staffing.svg";
 import video from "../../pictures/Our Clients .mp4";
+import video2 from "../../pictures/testimonial.mp4";
 import poster from "../../pictures/poster.png";
 import "./Clients.scss";
 const Clients = () => {
@@ -117,16 +118,29 @@ const Clients = () => {
         </div>
       </div>
       <div className="testimonials">
-        <div className="text">Client Testimonials :</div>
+        <div className="text">Client Testimonials</div>
         <div className="videoContainer">
-          <video
-            controlsid="video"
-            controls
-            controlsList="nodownload"
-            preload="metadata"
-            poster={poster}
-            src={video}
-          ></video>
+          <div className="video-wrapper">
+            <h3>Client Testimonial</h3>
+            <video
+              id="video1"
+              controls
+              controlsList="nodownload"
+              preload="metadata"
+              poster={poster}
+              src={video}
+            ></video>
+          </div>
+          <div className="video-wrapper">
+            <h3>Client Testimonial</h3>
+            <video
+              id="video2"
+              controls
+              controlsList="nodownload"
+              preload="metadata"
+              src={video2}
+            ></video>
+          </div>
         </div>
       </div>
     </div>

@@ -128,7 +128,8 @@ const Contact = () => {
           </div>
           <div className="item">
             <img src={address} alt="loading" />
-            <p>Texas , USA.</p>
+            <p>6705 W Highway 290 Suite 607 #1021
+            Austin, TX. 78735-8407 United States</p>
           </div>
         </div>
 
